@@ -1,0 +1,33 @@
+
+</div>
+
+<section class="ShoppingContainer">
+	<span id="MySpan2">This is a section</span>
+</section>
+
+
+<footer>
+
+</footer>
+<script type="text/javascript">
+	var myDiv = document.getElementBeId("maindiv");
+	var newSpan = document.createElement("span");
+	newSpan.innerHTML = "Hello";
+	myDiv.appendChild(newSpan);
+
+	var myDiv2 = 
+document.getElementsByClassName("ShoppingContainer");
+	var newSpan2 = document.createElement("span");
+	newSpan2.innerHTML = "Hello 2";
+	myDiv2[0].appendChild(newSpan2);
+
+	var existingSpan = document.getElementById("MySpan2");
+	
+	existingSpan.remove();
+	
+	var newSpan3 = document.createElement("span");
+	newSpan3.innerHTML = "Hello 3";
+	newSpan3.insertBefore(existingSpan);
+</script>
+</body>
+</html>
